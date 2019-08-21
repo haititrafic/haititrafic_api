@@ -1,0 +1,49 @@
+LOGIN
+    
+    METHOD POST: 127.0.0.1:3000/login/ 
+        {
+            "email": "sandynag2uxt@gmail.com",
+            "password": "mypassiword"
+        }
+
+        SUCCESS RESPONSE:
+            {
+                "status": 200,
+                "success": true,
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoic2FuZHluYWcydXh0QGdtYWlsLmNvbSIsImlkIjoyOCwiaWF0IjoxNTY1MzMzMjMzLCJleHAiOjE1NzgyOTMyMzN9.R6ufF7VYk67ypWxf3sfMRjIO4CKJiz0K4qhDCdRhX3c",
+                "user": "sandynag2uxt@gmail.com",
+                "error": null,
+                "length": 1,
+                "message": "SUCCESS LOGIN, GET YOUR TOKEN",
+                "response": [
+                    {
+                        "user": 28,
+                        "email": "sandynag2uxt@gmail.com",
+                        "telephone": "+50989973268555",
+                        "created": "2019-08-09T06:33:51.000Z",
+                        "updated": "0000-00-00 00:00:00",
+                        "photo": "default.jpg",
+                        "actif": 1,
+                        "country": {
+                            "id": 1,
+                            "globalname": "Canada",
+                            "shortname": "CAN"
+                        },
+                        "type": {
+                            "value": "CLIENT"
+                        }
+                    }
+                ]
+            }
+        FAILED RESPONSE :
+            {
+                "status": 200,
+                "success": true,
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoic2FuZHluYWcydXh0QGdtYWlsLmNvbSIsImlkIjowLCJpYXQiOjE1NjUzMzU3MjgsImV4cCI6MTU3ODI5NTcyOH0.KjbnmmK8CEtWPaYCN5iM5ZBs6AlWY_hAJRLvqmGF5bQ",
+                "email": "sandynag2uxt@gmail.com",
+                "error": null,
+                "length": 0,
+                "message": "FAILED TO CONNECT, VERIFY YOUR INFORMATION OR CREATE A NEW ACCOUNT",
+                "response": []
+            }
+    

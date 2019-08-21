@@ -1,0 +1,34 @@
+REGISTER
+
+    METHOD POST: 127.0.0.1:3000/register
+        {
+            "email": "sandynag2uxt@gmail.com",
+            "telephone": "+50989973268555",
+            "password": "mypassiword",
+            "country": 1,
+            "photo": "default.jpg",
+            "type": 2
+        }
+
+        SUCCESS RESPONSE:
+            {
+                "status": 200,
+                "success": true,
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvIjoic2FuZHluYWcydXh0cUBnbWFpbC5jb20iLCJpZCI6MzAsImlhdCI6MTU2NTMzNTk3OSwiZXhwIjoxNTc4Mjk1OTc5fQ.wRO-CajtnTQ5acwPfev5dl9DYb8OWfaNWhbfQS-7JGI",
+                "user": "sandynag2uxtq@gmail.com",
+                "error": null,
+                "length": 1,
+                "message": "ACCOUNT CREATE SUCCESSFULLY, GET YOUR TOKEN",
+                "response": null
+            }
+        FAILED RESPONSE :
+            {
+                "status": 500,
+                "success": false,
+                "error": {
+                    "code": "ER_DUP_ENTRY"
+                },
+                "message": "Duplicate entry 'sandynag2uxt@gmail.com' for key 'email_user'",
+                "length": 0,
+                "response": null
+            }
